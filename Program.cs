@@ -35,6 +35,12 @@ namespace LINQ_GroupBy
             var List = from item 
                        in Books 
                        group item by item.Author;
+            
+            <summary>
+              // Non Query Syntax
+            </summary>
+
+            var List = Books.GroupBy(item => item.Author);
 
             foreach (var item in List)
             {
